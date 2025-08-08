@@ -299,6 +299,99 @@ const PaymentPage = () => {
                 </>
               )}
             </Button>
+
+            {/* Contact Information */}
+            <Card className="bg-gradient-to-br from-gray-900/80 to-black/80 border-gray-700/50">
+              <CardHeader>
+                <CardTitle className="text-xl text-cyan-400 flex items-center gap-2">
+                  <MessageCircle className="h-5 w-5" />
+                  After Payment - Contact Us
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-4">
+                  <p className="text-gray-300 text-sm">
+                    📱 <strong>After completing your payment, please DM us on any of our platforms:</strong>
+                  </p>
+                  
+                  <div className="grid grid-cols-2 gap-4">
+                    <motion.a
+                      href="https://telegram.me/quantumfx_support"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-3 p-3 rounded-lg bg-blue-500/10 border border-blue-500/30 hover:border-blue-400 transition-all duration-200 group"
+                      whileHover={{ scale: 1.02 }}
+                    >
+                      <div className="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center">
+                        <span className="text-white font-bold text-sm">TG</span>
+                      </div>
+                      <div>
+                        <p className="text-white font-medium text-sm">Telegram</p>
+                        <p className="text-blue-300 text-xs">@quantumfx_support</p>
+                      </div>
+                    </motion.a>
+
+                    <motion.a
+                      href="https://wa.me/1234567890"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-3 p-3 rounded-lg bg-green-500/10 border border-green-500/30 hover:border-green-400 transition-all duration-200 group"
+                      whileHover={{ scale: 1.02 }}
+                    >
+                      <div className="w-8 h-8 bg-green-500 rounded-lg flex items-center justify-center">
+                        <span className="text-white font-bold text-sm">WA</span>
+                      </div>
+                      <div>
+                        <p className="text-white font-medium text-sm">WhatsApp</p>
+                        <p className="text-green-300 text-xs">+1 234 567 890</p>
+                      </div>
+                    </motion.a>
+
+                    <motion.a
+                      href="https://discord.gg/quantumfx"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-3 p-3 rounded-lg bg-purple-500/10 border border-purple-500/30 hover:border-purple-400 transition-all duration-200 group"
+                      whileHover={{ scale: 1.02 }}
+                    >
+                      <div className="w-8 h-8 bg-purple-500 rounded-lg flex items-center justify-center">
+                        <span className="text-white font-bold text-sm">DC</span>
+                      </div>
+                      <div>
+                        <p className="text-white font-medium text-sm">Discord</p>
+                        <p className="text-purple-300 text-xs">QuantumFX Server</p>
+                      </div>
+                    </motion.a>
+
+                    <motion.a
+                      href="mailto:support@quantumfx.com"
+                      className="flex items-center gap-3 p-3 rounded-lg bg-red-500/10 border border-red-500/30 hover:border-red-400 transition-all duration-200 group"
+                      whileHover={{ scale: 1.02 }}
+                    >
+                      <div className="w-8 h-8 bg-red-500 rounded-lg flex items-center justify-center">
+                        <span className="text-white font-bold text-sm">@</span>
+                      </div>
+                      <div>
+                        <p className="text-white font-medium text-sm">Email</p>
+                        <p className="text-red-300 text-xs">support@quantumfx.com</p>
+                      </div>
+                    </motion.a>
+                  </div>
+
+                  <div className="bg-cyan-900/20 border border-cyan-500/30 rounded-lg p-4 mt-4">
+                    <div className="flex items-start gap-3">
+                      <CheckCircle className="h-5 w-5 text-cyan-400 mt-0.5 flex-shrink-0" />
+                      <div className="text-sm">
+                        <p className="text-cyan-300 font-medium mb-1">Quick Response Guarantee</p>
+                        <p className="text-cyan-200">
+                          We respond within <strong>2-4 hours</strong> and deliver your bots within <strong>24 hours</strong> after payment verification.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
           </motion.div>
         </div>
       </div>
