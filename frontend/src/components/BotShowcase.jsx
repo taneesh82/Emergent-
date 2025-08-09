@@ -39,7 +39,7 @@ const BotShowcase = ({ botPacks, onBuyPack }) => {
   return (
     <section id="showcase" className="py-20 relative">
       {/* Background Effects */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-purple-900/5 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-purple-900/5 to-transparent pointer-events-none" />
       
       <div className="max-w-7xl mx-auto px-4">
         <motion.div 
