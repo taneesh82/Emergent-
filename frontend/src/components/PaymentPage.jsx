@@ -314,9 +314,9 @@ const PaymentPage = () => {
                     📱 <strong>After completing your payment, please DM us on any of our platforms:</strong>
                   </p>
                   
-                  <div className="grid grid-cols-2 gap-4">
+                  <div className="grid grid-cols-3 gap-4">
                     <motion.a
-                      href="https://telegram.me/quantumfx_support"
+                      href="https://t.me/+G3EYX770-dcxM2Zl"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-3 p-3 rounded-lg bg-blue-500/10 border border-blue-500/30 hover:border-blue-400 transition-all duration-200 group"
@@ -327,28 +327,12 @@ const PaymentPage = () => {
                       </div>
                       <div>
                         <p className="text-white font-medium text-sm">Telegram</p>
-                        <p className="text-blue-300 text-xs">@quantumfx_support</p>
+                        <p className="text-blue-300 text-xs">Join Group</p>
                       </div>
                     </motion.a>
 
                     <motion.a
-                      href="https://wa.me/1234567890"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-3 p-3 rounded-lg bg-green-500/10 border border-green-500/30 hover:border-green-400 transition-all duration-200 group"
-                      whileHover={{ scale: 1.02 }}
-                    >
-                      <div className="w-8 h-8 bg-green-500 rounded-lg flex items-center justify-center">
-                        <span className="text-white font-bold text-sm">WA</span>
-                      </div>
-                      <div>
-                        <p className="text-white font-medium text-sm">WhatsApp</p>
-                        <p className="text-green-300 text-xs">+1 234 567 890</p>
-                      </div>
-                    </motion.a>
-
-                    <motion.a
-                      href="https://discord.gg/quantumfx"
+                      href="https://discord.gg/tkg9YxU84n"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-3 p-3 rounded-lg bg-purple-500/10 border border-purple-500/30 hover:border-purple-400 transition-all duration-200 group"
@@ -359,23 +343,24 @@ const PaymentPage = () => {
                       </div>
                       <div>
                         <p className="text-white font-medium text-sm">Discord</p>
-                        <p className="text-purple-300 text-xs">QuantumFX Server</p>
+                        <p className="text-purple-300 text-xs">Join Server</p>
                       </div>
                     </motion.a>
 
-                    <motion.a
-                      href="mailto:support@quantumfx.com"
-                      className="flex items-center gap-3 p-3 rounded-lg bg-red-500/10 border border-red-500/30 hover:border-red-400 transition-all duration-200 group"
+                    <motion.div
+                      className="flex items-center gap-3 p-3 rounded-lg bg-red-500/10 border border-red-500/30 hover:border-red-400 transition-all duration-200 group cursor-pointer"
                       whileHover={{ scale: 1.02 }}
+                      onClick={() => handleCopyAddress('Taneeshgantlana.01@gmail.com')}
                     >
                       <div className="w-8 h-8 bg-red-500 rounded-lg flex items-center justify-center">
                         <span className="text-white font-bold text-sm">@</span>
                       </div>
-                      <div>
+                      <div className="flex-1">
                         <p className="text-white font-medium text-sm">Email</p>
-                        <p className="text-red-300 text-xs">support@quantumfx.com</p>
+                        <p className="text-red-300 text-xs">Click to Copy</p>
                       </div>
-                    </motion.a>
+                      <Copy className="h-4 w-4 text-red-400" />
+                    </motion.div>
                   </div>
 
                   <div className="bg-cyan-900/20 border border-cyan-500/30 rounded-lg p-4 mt-4">
